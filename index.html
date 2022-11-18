@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="pt-BR">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cadastro de Devs</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+	<div id="conteudo">		
+
+		<div class="conteudo-titulo">
+			<h1>Cadastro de Desenvolvedores</h1>
+			<img src="imagens/dev.png" width="40px" height="40px">
+		</div>
+			
+		<div class="conteudo-subtitulo">
+			<h4>Complete seu cadastro</h4>
+		</div>
+
+		<form id="form">
+
+			<div>
+				<label for="nome">Nome</label> <br>				
+				<input type="text" class="campo-input required" id="nome" placeholder="Digite seu nome" oninput="nameValidate"> <br>
+				<span class="span-required">Nome deve ter no minimo 3 caracteres</span>
+			</div>
+
+			<div>
+				<label for="sobrenome">Sobrenome</label> <br>
+				<input type="text" class="campo-input required" id="sobrenome" placeholder="Digite seu sobrenome"> <br>
+				<span class="span-required">Sobrenome deve ter no minimo 3 caracteres</span>
+			</div>
+
+			<div>
+				<label for="email">Digite seu email</label> <br>
+				<input type="email" class="campo-input required" id="email" placeholder="Digite seu email"> <br>
+				<span class="span-required">Digite um email válido</span>
+			</div>
+
+			<div>
+				<label for="senha">Senha</label> <br>
+				<input type="password" class="campo-input required" id="senha" placeholder="Digite sua senha"> <br>
+				<span class="span-required">Senha deve ter no minimo com 6 caracteres</span>
+			</div>
+
+			<div>
+				<input type="password" class="campo-input required" placeholder="Repita sua senha"> <br>
+				<span class="span-required">Senhas devem ser compatíveis</span>
+			</div>
+
+			<p>De qual lado da aplicação você desenvolve?</p>
+
+			<div>
+				<input type="radio" id="front-end" name="fav-lang">
+				<label for="front-end">Front-end</label> <br>
+
+				<input type="radio" id="back-end" name="fav-lang">
+				<label for="back-end">Back-end</label> <br>
+
+				<input type="radio" id="fullstack" name="fav-lang">
+				<label for="fullstack">Fullstack</label>
+			</div>
+
+			<div>
+				<label>Senioridade</label> <br>
+				<select>
+					<option value="estagiario">Estagiário</option>
+					<option value="trainee">Trainee</option>
+					<option value="junior" selected>Junior</option>
+					<option value="pleno">Pleno</option>
+					<option value="senior">Senior</option>
+				</select>
+			</div> <br>
+
+			Selecione as tecnologias que voce utiliza:
+
+			<div class="box-select">
+				<div>
+					<input type="checkbox" id="html" value="html" name="tecnologias">
+					<label for="html">HTML</label>
+				</div>
+				<div>
+					<input type="checkbox" id="css" value="css" name="tecnologias">
+					<label for="css">CSS</label>
+				</div>
+				<div>
+					<input type="checkbox" id="js" value="js" name="tecnologias">
+					<label for="js">JavaScript</label>
+				</div>
+				<div>
+					<input type="checkbox" id="php" value="php" name="tecnologias">
+					<label for="php">PHP</label>
+				</div>
+				<div>
+					<input type="checkbox" id="c#" value="c#" name="tecnologias">
+					<label for="c#">C#</label>
+				</div>
+				<div>
+					<input type="checkbox" id="py" value="py" name="tecnologias">
+					<label for="py">Python</label>
+				</div>
+				<div>
+					<input type="checkbox" id="ruby" value="ruby" name="tecnologias">
+					<label for="ruby">Ruby</label>
+				</div>
+			</div>
+
+			<label for="experiencia">Conte um pouco mais sobre sua experiência:</label> <br>
+			<div class="campo-area">				
+				<textarea name="experiencia" id="experiencia" placeholder="Nos fale um pouco sobre você..."></textarea> <br>
+			</div>
+
+			<div class="botao">
+				<button type="submit">Enviar</button>
+			</div>
+
+		</form>
+
+	</div>
+
+</body>
+
+</html>
