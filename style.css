@@ -50,10 +50,6 @@ body {
 	gap: 1rem;
 }
 
-.span-required {
-	display: none;
-}
-
 .campo-input {
 	margin-top: 7px;
 	margin-bottom: -10px;
